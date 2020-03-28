@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Hugo入门（零）搭建博客 | 魔轮的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://molun01.gitee.io/favicon.ico?v=1585386601739">
+<link rel="stylesheet" href="https://molun01.gitee.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="Hugo是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo再次使构建网站变得有趣。
+
+Hugo的安装及配置
+步骤 1. 安装 Hugo
+转到Hugo Download 并下载适用于您的操作系统和体系结构的版本。将其安装在..." />
+    <meta name="keywords" content="Hugo" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://molun01.gitee.io">
+        <img src="https://molun01.gitee.io/images/avatar.png?v=1585386601739" class="site-logo">
+        <h1 class="site-title">魔轮的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/post/tools" class="site-nav">
+            工具
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      博客、学习、C/C++/Java、用Gridea搭建博客、浏览器收藏夹
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://molun01.gitee.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Hugo入门（零）搭建博客</h2>
+            <div class="post-date">2019-06-18</div>
+            
+              <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8sfA.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>Hugo是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo再次使构建网站变得有趣。</p>
+<!-- more -->
+<h1 id="hugo的安装及配置">Hugo的安装及配置</h1>
+<h2 id="步骤-1-安装-hugo">步骤 1. 安装 Hugo</h2>
+<p>转到<a href="https://github.com/spf13/hugo/releases">Hugo Download</a> 并下载适用于您的操作系统和体系结构的版本。将其安装在特定的位置，因为我们将在下一步中使用它。</p>
+<p>参考文档 <a href="https://www.gohugo.org/">快速开始</a></p>
+<h2 id="步骤-2-生成站点并新建文章">步骤 2. 生成站点并新建文章</h2>
+<ol>
+<li>生成站点到<code>/path/to/site</code>路径</li>
+<li>进入<code>site</code>目录</li>
+<li>创建一篇文章<code>README.md</code>到<code>content/post</code>下</li>
+<li>生成页面</li>
+<li>打开浏览器并在地址栏中输入 <a href="http://localhost:1313">http://localhost:1313</a> 进行查看</li>
+</ol>
+<p>对应的命令:</p>
+<pre><code>hugo new site /path/to/site
+cd /path/to/site
+hugo new post/README.md
+hugo server --buildDrafts
+
+                   | EN  
++------------------+----+
+  Pages            | 47  
+  Paginator pages  |  7  
+  Non-page files   |  0  
+  Static files     |  1  
+  Processed images |  0  
+  Aliases          | 16  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 33 ms
+Watching for changes in /home/molun/myblog/{content,data,layouts,static,themes}
+Watching for config changes in /home/molun/myblog/config.toml
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+<p>至此，一个新的站点已创建完成.</p>
+<h2 id="步骤-3-安装皮肤">步骤 3. 安装皮肤</h2>
+<p>去<a href="https://themes.gohugo.io/">Hugo 主题</a>挑选并下载适合的主题，这里以<code>m10c</code>主题为例：</p>
+<pre><code>cd site/    
+git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+#在你的站点根目录执行 Hugo 命令进行调试：
+hugo server --theme=m10c --buildDrafts
+#（注明：v0.15 版本之后，不再需要使用 --watch 参数了）
+</code></pre>
+<p>如果想要简介演示的主题颜色，你可以看到<code>m10c/exampleSite/ config.toml</code>文件。</p>
+<h2 id="步骤-4-部署站点">步骤 4. 部署站点</h2>
+<p>*按<code>Ctrl+C</code>停止<code>Hugo</code>服务进程</p>
+<p>假设你需要部署在 <a href="https://pages.github.com/">GitHub Pages</a> 上，首先在<code>GitHub</code>上创建一个<code>Repository</code>，命名为：<code>molun01.github.io</code>（<code>molun01</code>替换为你的<code>github</code>用户名）。</p>
+<p>在站点根目录执行<code>Hugo</code>命令生成最终页面：</p>
+<pre><code>hugo --theme=hyde --baseUrl=&quot;http://molun01.github.io/&quot;
+</code></pre>
+<p>如果一切顺利，所有静态页面都会生成到<code>site/public/</code>下，将<code>pubilc</code>目录里所有文件<code>push</code>到刚创建的<code>Repository</code>的<code>master</code>分支。</p>
+<p>注意：<code>GitHub Pages</code>只能从<code>master</code>分支部署</p>
+<pre><code>cd public
+git init
+git remote add origin https://github.com/molun01/molun01.github.io.git
+git add -A
+git commit -m &quot;first commit&quot;
+git push -u origin master
+</code></pre>
+<p>浏览器里访问：<a href="http://coderzh.github.io/">http://molun01.github.io/</a></p>
+<h2 id="步骤-5-祝你玩的开心y_y">步骤 5. 祝你玩的开心Y(<sup>_</sup>)Y</h2>
+<p>学习新东西的最好方式就是去玩它。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://molun01.gitee.io/tag/iIli435N9/" class="tag">
+                    Hugo
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

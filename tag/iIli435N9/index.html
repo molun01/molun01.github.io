@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Hugo | 魔轮的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://molun01.gitee.io/favicon.ico?v=1585386601739">
+<link rel="stylesheet" href="https://molun01.gitee.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="博客、学习、C/C++/Java、用Gridea搭建博客、浏览器收藏夹">
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://molun01.gitee.io">
+        <img src="https://molun01.gitee.io/images/avatar.png?v=1585386601739" class="site-logo">
+        <h1 class="site-title">魔轮的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/post/tools" class="site-nav">
+            工具
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      博客、学习、C/C++/Java、用Gridea搭建博客、浏览器收藏夹
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://molun01.gitee.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="current-tag">标签: Hugo</h2>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://molun01.gitee.io/post/Lesson2/">
+                  <h2 class="post-title">Hugo入门（二）Github仓库迁移</h2>
+                </a>
+                <div class="post-date">
+                  2019-10-22
+                </div>
+                <div class="post-abstract">
+                  <p><a href="https://pages.github.com/">GitHub Pages</a>规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://molun01.gitee.io/post/Lesson2/">
+                  <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8Ny6.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://molun01.gitee.io/post/Lesson1/">
+                  <h2 class="post-title">Hugo入门（一）如何开始写博客</h2>
+                </a>
+                <div class="post-date">
+                  2019-10-21
+                </div>
+                <div class="post-abstract">
+                  <p>用Hugo搭建的博客，主要采用Markdown格式来撰写博文</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://molun01.gitee.io/post/Lesson1/">
+                  <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8wwD.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+            <article class="post-item">
+              <div class="left">
+                <a href="https://molun01.gitee.io/post/Blog-by-Hugo/">
+                  <h2 class="post-title">Hugo入门（零）搭建博客</h2>
+                </a>
+                <div class="post-date">
+                  2019-06-18
+                </div>
+                <div class="post-abstract">
+                  <p>Hugo是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo再次使构建网站变得有趣。</p>
+
+                </div>
+              </div>
+              
+                <a class="right" href="https://molun01.gitee.io/post/Blog-by-Hugo/">
+                  <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8sfA.jpg')">
+                  </div>
+                </a>
+              
+            </article>
+          
+
+          <div class="pagination-container">
+  
+  
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

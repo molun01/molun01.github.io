@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>Hugo入门（二）Github仓库迁移 | 魔轮的博客</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://molun01.gitee.io/favicon.ico?v=1585386601739">
+<link rel="stylesheet" href="https://molun01.gitee.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="GitHub Pages规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。
+
+迁移后的好处
+可以从不同仓库gh-pages分支部署博客了，方便切换主题或控制版本
+如何迁移
+新建一个仓库
+1.在此页面的Repository nam..." />
+    <meta name="keywords" content="Hugo" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://molun01.gitee.io">
+        <img src="https://molun01.gitee.io/images/avatar.png?v=1585386601739" class="site-logo">
+        <h1 class="site-title">魔轮的博客</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/post/tools" class="site-nav">
+            工具
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      博客、学习、C/C++/Java、用Gridea搭建博客、浏览器收藏夹
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://molun01.gitee.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">Hugo入门（二）Github仓库迁移</h2>
+            <div class="post-date">2019-10-22</div>
+            
+              <div class="feature-container" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8Ny6.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p><a href="https://pages.github.com/">GitHub Pages</a>规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。</p>
+<!-- more -->
+<h1 id="迁移后的好处">迁移后的好处</h1>
+<p>可以从不同仓库gh-pages分支部署博客了，方便切换主题或控制版本</p>
+<h1 id="如何迁移">如何迁移</h1>
+<h2 id="新建一个仓库">新建一个仓库</h2>
+<p>1.在此页面的<code>Repository name</code>框中，为您的代码库起一个名字，例如:<code>Blog</code>。<br>
+2.添加自述文件<code>README.md</code>到其中。（可选）<br>
+3.单击<code>Create repository</code>，创建成功可看到三种添加文件方式的指导;</p>
+<h1 id="将您的文件上传到github">将您的文件上传到GitHub</h1>
+<p>*如果是搭建一个全新的博客可参考<a href="../Blog-by-Hugo">Hugo入门（零）</a></p>
+<h2 id="迁移步骤">迁移步骤</h2>
+<p>1.新建好仓库后，选择第三个添加文件的方式即从其他仓库中导入项目，挺慢的，成功的标志为邮件通知。<br>
+2.现在你需要为你的仓库创建一个<code>gh-pages</code>分支，该分支会在特殊位置发布。<br>
+3.它的URL采用<code>username.github.io/Repository-name</code>的格式，所以在我的例子中，URL是<code>https://molun01.github.io/Blog</code>。显示的页面是<code>index.html</code>页面。</p>
+<h1 id="测试博客">测试博客</h1>
+<p>在新的浏览器标签中浏览您的<code>GitHub Pages</code>的网址，您将能够在线访问您的网站！通过电子邮件把地址发送给你的朋友，炫耀你的掌握的成果吧。<br>
+注意 ：如果卡住了，<a href="https://pages.github.com/">GitHub Pages主页</a>也是非常有帮助的。</p>
+<h1 id="更多的github知识">更多的GitHub知识</h1>
+<p>如果您想对test-site进行更多更改并将其上传到GitHub，那么您只需像以前一样对文件进行更改。然后，您需要输入以下命令（在每个之后按Enter键）将这些更改推送到GitHub：</p>
+<pre><code>git add -A
+git commit -m 'another commit'
+git push
+</code></pre>
+<p>您可以使用更合适的消息替换上一次的提交信息，以描述您刚刚做出的更改。</p>
+<p>我们仅仅提供了Git的浅显基本的信息。要了解更多信息，请先从<a href="https://help.github.com/cn">GitHub帮助</a>站点开始。</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://molun01.gitee.io/tag/iIli435N9/" class="tag">
+                    Hugo
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://molun01.gitee.io/post/浏览器收藏夹/">
+                  <h3 class="post-title">
+                    浏览器收藏夹
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
