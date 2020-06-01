@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://molun01.gitee.io</id>
+    <id>https://molun01.github.io</id>
     <title>魔轮的博客</title>
-    <updated>2020-03-28T09:16:02.603Z</updated>
+    <updated>2020-06-01T14:07:33.044Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://molun01.gitee.io"/>
-    <link rel="self" href="https://molun01.gitee.io/atom.xml"/>
+    <link rel="alternate" href="https://molun01.github.io"/>
+    <link rel="self" href="https://molun01.github.io/atom.xml"/>
     <subtitle>博客、学习、C/C++/Java、用Gridea搭建博客、浏览器收藏夹</subtitle>
-    <logo>https://molun01.gitee.io/images/avatar.png</logo>
-    <icon>https://molun01.gitee.io/favicon.ico</icon>
+    <logo>https://molun01.github.io/images/avatar.png</logo>
+    <icon>https://molun01.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, 魔轮的博客</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
-        <id>https://molun01.gitee.io/post/hello-gridea/</id>
-        <link href="https://molun01.gitee.io/post/hello-gridea/">
+        <id>https://molun01.github.io/post/hello-gridea/</id>
+        <link href="https://molun01.github.io/post/hello-gridea/">
         </link>
         <updated>2020-02-29T16:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
@@ -44,8 +44,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[数据结构课程设计--学生通讯录管理系统]]></title>
-        <id>https://molun01.gitee.io/post/数据结构课程设计--学生通讯录管理系统/</id>
-        <link href="https://molun01.gitee.io/post/数据结构课程设计--学生通讯录管理系统/">
+        <id>https://molun01.github.io/post/数据结构课程设计--学生通讯录管理系统/</id>
+        <link href="https://molun01.github.io/post/数据结构课程设计--学生通讯录管理系统/">
         </link>
         <updated>2020-01-02T02:22:47.000Z</updated>
         <summary type="html"><![CDATA[<p>在大二上学期参与的一次数据结构课程设计，<a href="https://github.com/molun01/CODE/tree/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">Github项目地址</a></p>
@@ -92,8 +92,8 @@ int CheckContactsKey(char key[],int start,int cycle) {
     </entry>
     <entry>
         <title type="html"><![CDATA[Chrome浏览器新版测试功能开启]]></title>
-        <id>https://molun01.gitee.io/post/Chrome浏览器新版测试功能开启/</id>
-        <link href="https://molun01.gitee.io/post/Chrome浏览器新版测试功能开启/">
+        <id>https://molun01.github.io/post/Chrome浏览器新版测试功能开启/</id>
+        <link href="https://molun01.github.io/post/Chrome浏览器新版测试功能开启/">
         </link>
         <updated>2019-11-29T01:43:05.000Z</updated>
         <summary type="html"><![CDATA[<p>Chrome隐藏功能</p>
@@ -110,8 +110,8 @@ int CheckContactsKey(char key[],int start,int cycle) {
     </entry>
     <entry>
         <title type="html"><![CDATA[图床收藏及测试]]></title>
-        <id>https://molun01.gitee.io/post/图床收藏及测试/</id>
-        <link href="https://molun01.gitee.io/post/图床收藏及测试/">
+        <id>https://molun01.github.io/post/图床收藏及测试/</id>
+        <link href="https://molun01.github.io/post/图床收藏及测试/">
         </link>
         <updated>2019-11-29T01:17:23.000Z</updated>
         <summary type="html"><![CDATA[<p>一些好用的，稳定的图床网站提供图片外链</p>
@@ -146,8 +146,8 @@ int CheckContactsKey(char key[],int start,int cycle) {
     </entry>
     <entry>
         <title type="html"><![CDATA[Hugo入门（二）Github仓库迁移]]></title>
-        <id>https://molun01.gitee.io/post/Lesson2/</id>
-        <link href="https://molun01.gitee.io/post/Lesson2/">
+        <id>https://molun01.github.io/post/Lesson2/</id>
+        <link href="https://molun01.github.io/post/Lesson2/">
         </link>
         <updated>2019-10-22T01:39:41.000Z</updated>
         <summary type="html"><![CDATA[<p><a href="https://pages.github.com/">GitHub Pages</a>规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。</p>
@@ -182,8 +182,8 @@ git push
     </entry>
     <entry>
         <title type="html"><![CDATA[浏览器收藏夹]]></title>
-        <id>https://molun01.gitee.io/post/浏览器收藏夹/</id>
-        <link href="https://molun01.gitee.io/post/浏览器收藏夹/">
+        <id>https://molun01.github.io/post/浏览器收藏夹/</id>
+        <link href="https://molun01.github.io/post/浏览器收藏夹/">
         </link>
         <updated>2019-10-21T01:41:42.000Z</updated>
         <summary type="html"><![CDATA[<p>来自我的Cent Browser、Edge、Linux的收藏合集</p>
@@ -199,8 +199,8 @@ git push
     </entry>
     <entry>
         <title type="html"><![CDATA[Hugo入门（一）如何开始写博客]]></title>
-        <id>https://molun01.gitee.io/post/Lesson1/</id>
-        <link href="https://molun01.gitee.io/post/Lesson1/">
+        <id>https://molun01.github.io/post/Lesson1/</id>
+        <link href="https://molun01.github.io/post/Lesson1/">
         </link>
         <updated>2019-10-21T01:36:37.000Z</updated>
         <summary type="html"><![CDATA[<p>用Hugo搭建的博客，主要采用Markdown格式来撰写博文</p>
@@ -231,8 +231,8 @@ git push
     </entry>
     <entry>
         <title type="html"><![CDATA[Hugo入门（零）搭建博客]]></title>
-        <id>https://molun01.gitee.io/post/Blog-by-Hugo/</id>
-        <link href="https://molun01.gitee.io/post/Blog-by-Hugo/">
+        <id>https://molun01.github.io/post/Blog-by-Hugo/</id>
+        <link href="https://molun01.github.io/post/Blog-by-Hugo/">
         </link>
         <updated>2019-06-18T00:31:57.000Z</updated>
         <summary type="html"><![CDATA[<p>Hugo是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo再次使构建网站变得有趣。</p>
