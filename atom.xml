@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://molun01.github.io</id>
     <title>魔轮的博客</title>
-    <updated>2020-06-01T16:03:46.433Z</updated>
+    <updated>2020-07-18T07:45:12.411Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://molun01.github.io"/>
     <link rel="self" href="https://molun01.github.io/atom.xml"/>
@@ -56,13 +56,11 @@
 <h2 id="1题目及要求">1.题目及要求。</h2>
 <figure data-type="image" tabindex="1"><img src="https://s1.ax1x.com/2020/03/12/8VJuaF.jpg" alt="研究课题" loading="lazy"></figure>
 <h2 id="2源代码">2.源代码</h2>
-<p><a href="https://raw.githubusercontent.com/molun01/CODE/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.c">学生通讯录管理系统.c</a></p>
+<p><a href="https://gitee.com/molun01/CODE/raw/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.c">学生通讯录管理系统.c</a></p>
 <h2 id="3可执行文件">3.可执行文件</h2>
-<p><a href="https://raw.githubusercontent.com/molun01/CODE/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.exe">学生通讯录管理系统.exe</a></p>
+<p><a href="https://gitee.com/molun01/CODE/raw/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.exe">学生通讯录管理系统.exe</a></p>
 <h2 id="4关键算法代码">4.关键算法代码</h2>
-<pre><code class="language-c">//不能动fp，不能动fp，不能动fp！！！(转到NewPeople())
-//start元素位，由结构体的定义决定，如学号为 1.解决学号手机号相同时的查重(修改时)问题
-//cycle,结构体中数据种类个数，本程序为4
+<pre><code class="language-c">
 /* 检查学号，手机号等关键字是否重复，重复返回TRUE */
 int CheckContactsKey(char key[],int start,int cycle) {
 	char buf[BUFLEN];
@@ -85,9 +83,6 @@ int CheckContactsKey(char key[],int start,int cycle) {
 	return FALSE;							/* 未发现相同关键字 */
 }
 </code></pre>
-<h2 id="5成果打包">5.成果打包。</h2>
-<p>包含源代码、程序、测试用例、报告，</p>
-<p><a href="https://raw.githubusercontent.com/molun01/CODE/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.zip">学生通讯录管理系统.zip</a></p>
 ]]></content>
     </entry>
     <entry>
@@ -122,12 +117,12 @@ int CheckContactsKey(char key[],int start,int cycle) {
 <figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2019/12/03/QKdfvn.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
 <h3 id="跬步图床"><a href="https://img.kuibu.net/">跬步图床</a>  不做备选，和路过图床很像，图片小于10M，审核比路过图床宽松，上传容易失败，重复上传即可</h3>
 <figure data-type="image" tabindex="2"><img src="https://cdn.webchain.site/file/imgdisk-2/2020/03/28/df17117851298fe416693b7f17d33e1982432e880b37f53d.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
-<h3 id="在线图床服务"><a href="https://imgs.thankjava.com">在线图床服务</a>  备用方案，知乎上看到的个人图床，待检测（图片大于5M，审核宽松。个人图床）</h3>
+<h3 id="在线图床服务"><a href="https://imgs.thankjava.com">在线图床服务</a>  备用方案，知乎上看到的个人图床，待检测（图片大于5M，审核宽松。）</h3>
 <p><img src="https://source.thankjava.com/view/XDKqKWb" alt="显示这段文字说明外链失效" loading="lazy"><br>
 <img src="https://source.thankjava.com/view/XDKqQXa" alt="显示这段文字说明外链失效" loading="lazy"></p>
 <h3 id="聚合图床"><a href="https://www.superbed.cn/">聚合图床</a>	微信登录，图片小于5M</h3>
 <figure data-type="image" tabindex="3"><img src="https://pic.downk.cc/item/5e69111de83c3a1e3ab8171a.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
-<h3 id="postimage"><a href="https://postimages.org/">Postimage</a>	新发现的，极力推荐，功能丰富完善。外国网站，但很快速（可能会删图片）</h3>
+<h3 id="postimage"><a href="https://postimages.org/">Postimage</a>	新发现的，功能丰富完善。国外网站，但很快速（可能会删图片）</h3>
 <figure data-type="image" tabindex="4"><img src="https://i.postimg.cc/PqTWF28q/VS.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
 <!-- more -->
 <h2 id="一些黑名单稍后放到文底">一些黑名单，稍后放到文底</h2>
@@ -140,8 +135,6 @@ int CheckContactsKey(char key[],int start,int cycle) {
 <h3 id="七牛云"><a href="https://www.qiniu.com/">七牛云</a>    需有自己的已备案域名（又拍云同理）</h3>
 <h3 id="腾讯云"><a href="https://cloud.tencent.com/">腾讯云</a>    仅免费6个月</h3>
 <h3 id="imgurl"><a href="https://imgurl.org/">imgURL</a>   游客限制每日上传10张，单张图片不能超过5M</h3>
-<h3 id="来自我的github仓库"><a href="https://github.com/molun01/images">来自我的github仓库</a>	稳定太慢了（码云需小于1M）</h3>
-<p><a href="https://raw.githubusercontent.com/molun01/images/master/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%A3%81%E7%BA%B8/%E6%8A%89%E6%8B%A9.jpg?token=ALXUNVGJJKWJTJ5SBXML5DC6P4BIC">在新标签页打开图片</a></p>
 ]]></content>
     </entry>
     <entry>
