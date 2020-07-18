@@ -5,9 +5,9 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    数据结构课程设计--学生通讯录管理系统 | 魔轮的博客
+    JavaWeb课程设计——图书管理系统 | 魔轮的博客
 </title>
-<link rel="shortcut icon" href="https://molun01.github.io/favicon.ico?v=1595059856128">
+<link rel="shortcut icon" href="https://molun01.github.io/favicon.ico?v=1595068793118">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
 <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
@@ -28,7 +28,7 @@
     <div class="nav">
         <div class="logo">
             <a href="https://molun01.github.io">
-                <img class="avatar" src="https://molun01.github.io/images/avatar.png?v=1595059856128" alt="">
+                <img class="avatar" src="https://molun01.github.io/images/avatar.png?v=1595068793118" alt="">
             </a>
             <div class="site-title">
                 <h1>
@@ -107,64 +107,34 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            数据结构课程设计--学生通讯录管理系统
+                            JavaWeb课程设计——图书管理系统
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2020-01-02</time>
+                            <time class="post-time">2020-07-18</time>
                             
                                 <a href="https://molun01.github.io/tag/TVwQPv8SZ/" class="post-tag i-tag
-                            i-tag-primary">
+                            i-tag-error">
                             #课程设计
                         </a>
                                 
                                 <a href="https://molun01.github.io/tag/oVQafulkg/" class="post-tag i-tag
-                            i-tag-other_4">
+                            i-tag-warning">
                             #学习项目
                         </a>
                                 
                                 <a href="https://molun01.github.io/tag/FdXXiaDke/" class="post-tag i-tag
-                            i-tag-warning">
+                            i-tag-banana">
                             #经历
                         </a>
                                 
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8clt.jpg')"></div>
+                            <div class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V82Of.jpg')"></div>
                             
                                 <div class="post-content">
-                                    <p>在大二上学期参与的一次数据结构课程设计，<a href="https://github.com/molun01/CODE/tree/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">Github项目地址</a></p>
+                                    <p>在大二下学期的一次web课程设计，<a href="https://gitee.com/molun01/CODE/tree/master/Web/%E9%A1%B9%E7%9B%AE/%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">Gitee项目地址</a></p>
 <!-- more -->
-<h1 id="研究课题学生通讯录管理系统">研究课题：学生通讯录管理系统</h1>
-<h2 id="1题目及要求">1.题目及要求。</h2>
-<figure data-type="image" tabindex="1"><img src="https://s1.ax1x.com/2020/03/12/8VJuaF.jpg" alt="研究课题" loading="lazy"></figure>
-<h2 id="2源代码">2.源代码</h2>
-<p><a href="https://gitee.com/molun01/CODE/raw/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.c">学生通讯录管理系统.c</a></p>
-<h2 id="3可执行文件">3.可执行文件</h2>
-<p><a href="https://gitee.com/molun01/CODE/raw/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.exe">学生通讯录管理系统.exe</a></p>
-<h2 id="4关键算法代码">4.关键算法代码</h2>
-<pre><code class="language-c">
-/* 检查学号，手机号等关键字是否重复，重复返回TRUE */
-int CheckContactsKey(char key[],int start,int cycle) {
-	char buf[BUFLEN];
-	FILE *fp1;							//在不动fp的情况下遍历文件
-	int i=1;
-	if((fp1=fopen(fname,&quot;r&quot;))==NULL) {
-		printf(&quot;打开文件%s失败.\n&quot;,fname);
-		system(&quot;pause&quot;);
-		return FALSE;
-	}
-	for(i=1;i&lt;start;i++) if(fscanf(fp1,&quot;%s&quot;,buf)!=1) break;//跳过关键字之前的元素位
-	while(fscanf(fp1,&quot;%s&quot;,buf)==1) {		//这里必须用等式，不能用！逻辑
-		if(strcmp(Encry(buf),key)==0) {
-			fclose(fp1);
-			return TRUE;					/* 发现已存在相同关键字 */
-		}
-		for(i=1;i&lt;cycle;i++) if(fscanf(fp1,&quot;%s&quot;,buf)!=1) break;//跳过一个循环周期 
-	}
-	fclose(fp1);
-	return FALSE;							/* 未发现相同关键字 */
-}
-</code></pre>
+<h1 id="研究课题图书管理系统">研究课题：图书管理系统</h1>
 
                                 </div>
                     </article>
@@ -172,9 +142,9 @@ int CheckContactsKey(char key[],int start,int cycle) {
                     
                         <div class="next-post">
                             <div class="next">下一篇</div>
-                            <a href="https://molun01.github.io/post/Chrome浏览器新版测试功能开启/">
+                            <a href="https://molun01.github.io/post/hello-gridea/">
                                 <h3 class="post-title">
-                                    Chrome浏览器新版测试功能开启
+                                    Hello Gridea
                                 </h3>
                             </a>
                         </div>
@@ -193,14 +163,7 @@ int CheckContactsKey(char key[],int start,int cycle) {
         <div class="toc-title i-card-title">目录</div>
         <div class="toc-content">
             <ul class="markdownIt-TOC">
-<li><a href="#%E7%A0%94%E7%A9%B6%E8%AF%BE%E9%A2%98%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">研究课题：学生通讯录管理系统</a>
-<ul>
-<li><a href="#1%E9%A2%98%E7%9B%AE%E5%8F%8A%E8%A6%81%E6%B1%82">1.题目及要求。</a></li>
-<li><a href="#2%E6%BA%90%E4%BB%A3%E7%A0%81">2.源代码</a></li>
-<li><a href="#3%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6">3.可执行文件</a></li>
-<li><a href="#4%E5%85%B3%E9%94%AE%E7%AE%97%E6%B3%95%E4%BB%A3%E7%A0%81">4.关键算法代码</a></li>
-</ul>
-</li>
+<li><a href="#%E7%A0%94%E7%A9%B6%E8%AF%BE%E9%A2%98%E5%9B%BE%E4%B9%A6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">研究课题：图书管理系统</a></li>
 </ul>
 
         </div>

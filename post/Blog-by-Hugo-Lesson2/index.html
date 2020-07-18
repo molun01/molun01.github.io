@@ -5,7 +5,7 @@
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>
-    关于在下 | 魔轮的博客
+    Hugo入门（二）Github仓库迁移 | 魔轮的博客
 </title>
 <link rel="shortcut icon" href="https://molun01.github.io/favicon.ico?v=1595068793118">
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
@@ -107,27 +107,61 @@
                 <div id="content" class="main-container-left">
                     <article class="post i-card">
                         <h2 class="post-title">
-                            关于在下
+                            Hugo入门（二）Github仓库迁移
                         </h2>
                         <div class="post-info">
-                            <time class="post-time">2019-01-01</time>
+                            <time class="post-time">2019-10-22</time>
                             
+                                <a href="https://molun01.github.io/tag/iIli435N9/" class="post-tag i-tag
+                            i-tag-warning">
+                            #Hugo
+                        </a>
+                                
                         </div>
                         
-                            <div class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8tQx.jpg')"></div>
+                            <div class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8Ny6.jpg')"></div>
                             
                                 <div class="post-content">
-                                    <p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+                                    <p><a href="https://pages.github.com/">GitHub Pages</a>规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。</p>
 <!-- more -->
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+<h1 id="迁移后的好处">迁移后的好处</h1>
+<p>可以从不同仓库gh-pages分支部署博客了，方便切换主题或控制版本</p>
+<h1 id="如何迁移">如何迁移</h1>
+<h2 id="新建一个仓库">新建一个仓库</h2>
+<p>1.在此页面的<code>Repository name</code>框中，为您的代码库起一个名字，例如:<code>Blog</code>。<br>
+2.添加自述文件<code>README.md</code>到其中。（可选）<br>
+3.单击<code>Create repository</code>，创建成功可看到三种添加文件方式的指导;</p>
+<h1 id="将您的文件上传到github">将您的文件上传到GitHub</h1>
+<p>*如果是搭建一个全新的博客可参考<a href="../Blog-by-Hugo">Hugo入门（零）</a></p>
+<h2 id="迁移步骤">迁移步骤</h2>
+<p>1.新建好仓库后，选择第三个添加文件的方式即从其他仓库中导入项目，挺慢的，成功的标志为邮件通知。<br>
+2.现在你需要为你的仓库创建一个<code>gh-pages</code>分支，该分支会在特殊位置发布。<br>
+3.它的URL采用<code>username.github.io/Repository-name</code>的格式，所以在我的例子中，URL是<code>https://molun01.github.io/Blog</code>。显示的页面是<code>index.html</code>页面。</p>
+<h1 id="测试博客">测试博客</h1>
+<p>在新的浏览器标签中浏览您的<code>GitHub Pages</code>的网址，您将能够在线访问您的网站！通过电子邮件把地址发送给你的朋友，炫耀你的掌握的成果吧。<br>
+注意 ：如果卡住了，<a href="https://pages.github.com/">GitHub Pages主页</a>也是非常有帮助的。</p>
+<h1 id="更多的github知识">更多的GitHub知识</h1>
+<p>如果您想对test-site进行更多更改并将其上传到GitHub，那么您只需像以前一样对文件进行更改。然后，您需要输入以下命令（在每个之后按Enter键）将这些更改推送到GitHub：</p>
+<pre><code>git add -A
+git commit -m 'another commit'
+git push
+</code></pre>
+<p>您可以使用更合适的消息替换上一次的提交信息，以描述您刚刚做出的更改。</p>
+<p>我们仅仅提供了Git的浅显基本的信息。要了解更多信息，请先从<a href="https://help.github.com/cn">GitHub帮助</a>站点开始。</p>
 
                                 </div>
                     </article>
                     <!--  -->
                     
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://molun01.github.io/post/浏览器收藏夹/">
+                                <h3 class="post-title">
+                                    浏览器收藏夹
+                                </h3>
+                            </a>
+                        </div>
+                        
                             <div id="disqus_thread"></div>
                             <div id="gitalk-container"></div>
                 </div>
@@ -142,14 +176,19 @@
         <div class="toc-title i-card-title">目录</div>
         <div class="toc-content">
             <ul class="markdownIt-TOC">
-<li>
+<li><a href="#%E8%BF%81%E7%A7%BB%E5%90%8E%E7%9A%84%E5%A5%BD%E5%A4%84">迁移后的好处</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E8%BF%81%E7%A7%BB">如何迁移</a>
 <ul>
-<li><a href="#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99">🏠 关于本站</a></li>
-<li><a href="#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81">👨‍💻 博主是谁</a></li>
-<li><a href="#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD">⛹ 兴趣爱好</a></li>
-<li><a href="#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80">📬 联系我呀</a></li>
+<li><a href="#%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93">新建一个仓库</a></li>
 </ul>
 </li>
+<li><a href="#%E5%B0%86%E6%82%A8%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github">将您的文件上传到GitHub</a>
+<ul>
+<li><a href="#%E8%BF%81%E7%A7%BB%E6%AD%A5%E9%AA%A4">迁移步骤</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2">测试博客</a></li>
+<li><a href="#%E6%9B%B4%E5%A4%9A%E7%9A%84github%E7%9F%A5%E8%AF%86">更多的GitHub知识</a></li>
 </ul>
 
         </div>
