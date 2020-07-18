@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://molun01.github.io</id>
+    <title>魔轮的博客</title>
+    <updated>2020-07-18T08:12:40.161Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://molun01.github.io"/>
+    <link rel="self" href="https://molun01.github.io/atom.xml"/>
+    <subtitle>博客、学习、C/C++/Java、用Gridea搭建博客、浏览器收藏夹</subtitle>
+    <logo>https://molun01.github.io/images/avatar.png</logo>
+    <icon>https://molun01.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2020, 魔轮的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://molun01.github.io/post/hello-gridea/</id>
+        <link href="https://molun01.github.io/post/hello-gridea/">
+        </link>
+        <updated>2020-02-29T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="http://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[数据结构课程设计--学生通讯录管理系统]]></title>
+        <id>https://molun01.github.io/post/数据结构课程设计--学生通讯录管理系统/</id>
+        <link href="https://molun01.github.io/post/数据结构课程设计--学生通讯录管理系统/">
+        </link>
+        <updated>2020-01-02T02:22:47.000Z</updated>
+        <summary type="html"><![CDATA[<p>在大二上学期参与的一次数据结构课程设计，<a href="https://github.com/molun01/CODE/tree/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">Github项目地址</a></p>
+]]></summary>
+        <content type="html"><![CDATA[<p>在大二上学期参与的一次数据结构课程设计，<a href="https://github.com/molun01/CODE/tree/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">Github项目地址</a></p>
+<!-- more -->
+<h1 id="研究课题学生通讯录管理系统">研究课题：学生通讯录管理系统</h1>
+<h2 id="1题目及要求">1.题目及要求。</h2>
+<figure data-type="image" tabindex="1"><img src="https://s1.ax1x.com/2020/03/12/8VJuaF.jpg" alt="研究课题" loading="lazy"></figure>
+<h2 id="2源代码">2.源代码</h2>
+<p><a href="https://gitee.com/molun01/CODE/raw/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.c">学生通讯录管理系统.c</a></p>
+<h2 id="3可执行文件">3.可执行文件</h2>
+<p><a href="https://gitee.com/molun01/CODE/raw/master/C/%E9%A1%B9%E7%9B%AE/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F.exe">学生通讯录管理系统.exe</a></p>
+<h2 id="4关键算法代码">4.关键算法代码</h2>
+<pre><code class="language-c">
+/* 检查学号，手机号等关键字是否重复，重复返回TRUE */
+int CheckContactsKey(char key[],int start,int cycle) {
+	char buf[BUFLEN];
+	FILE *fp1;							//在不动fp的情况下遍历文件
+	int i=1;
+	if((fp1=fopen(fname,&quot;r&quot;))==NULL) {
+		printf(&quot;打开文件%s失败.\n&quot;,fname);
+		system(&quot;pause&quot;);
+		return FALSE;
+	}
+	for(i=1;i&lt;start;i++) if(fscanf(fp1,&quot;%s&quot;,buf)!=1) break;//跳过关键字之前的元素位
+	while(fscanf(fp1,&quot;%s&quot;,buf)==1) {		//这里必须用等式，不能用！逻辑
+		if(strcmp(Encry(buf),key)==0) {
+			fclose(fp1);
+			return TRUE;					/* 发现已存在相同关键字 */
+		}
+		for(i=1;i&lt;cycle;i++) if(fscanf(fp1,&quot;%s&quot;,buf)!=1) break;//跳过一个循环周期 
+	}
+	fclose(fp1);
+	return FALSE;							/* 未发现相同关键字 */
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chrome浏览器新版测试功能开启]]></title>
+        <id>https://molun01.github.io/post/Chrome浏览器新版测试功能开启/</id>
+        <link href="https://molun01.github.io/post/Chrome浏览器新版测试功能开启/">
+        </link>
+        <updated>2019-11-29T01:43:05.000Z</updated>
+        <summary type="html"><![CDATA[<p>Chrome隐藏功能</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Chrome隐藏功能</p>
+<!-- more -->
+<h1 id="打开管理界面">打开管理界面</h1>
+<p>打开Chrome后，在地址栏输入**chrome://flags/**并回车。</p>
+<h2 id="1开启多线程下载">1.开启多线程下载</h2>
+<p>在 Search flags 处，输入 <code>Parallel downloading</code>查找并开启或在地址栏输入<code>chrome://flags/#enable-parallel-downloading</code>一步到位</p>
+<h2 id="2关闭字体渲染解决chrome字体变粗问题">2.关闭字体渲染（解决Chrome字体变粗问题）</h2>
+<p><code>chrome://flags/#disable-direct-write</code></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[图床收藏及测试]]></title>
+        <id>https://molun01.github.io/post/图床收藏及测试/</id>
+        <link href="https://molun01.github.io/post/图床收藏及测试/">
+        </link>
+        <updated>2019-11-29T01:17:23.000Z</updated>
+        <summary type="html"><![CDATA[<p>一些好用的，稳定的图床网站提供图片外链</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>一些好用的，稳定的图床网站提供图片外链</p>
+<!-- more -->
+<h3 id="路过图床"><a href="https://imgse.com/">路过图床</a>  目前首选，图片小于10M。一小时30张，审核太严了</h3>
+<figure data-type="image" tabindex="1"><img src="https://s2.ax1x.com/2019/12/03/QKdfvn.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
+<h3 id="跬步图床"><a href="https://img.kuibu.net/">跬步图床</a>  不做备选，和路过图床很像，图片小于10M，审核比路过图床宽松，上传容易失败，重复上传即可</h3>
+<figure data-type="image" tabindex="2"><img src="https://cdn.webchain.site/file/imgdisk-2/2020/03/28/df17117851298fe416693b7f17d33e1982432e880b37f53d.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
+<h3 id="在线图床服务"><a href="https://imgs.thankjava.com">在线图床服务</a>  备用方案，知乎上看到的个人图床，待检测（图片大于5M，审核宽松。）</h3>
+<p><img src="https://source.thankjava.com/view/XDKqKWb" alt="显示这段文字说明外链失效" loading="lazy"><br>
+<img src="https://source.thankjava.com/view/XDKqQXa" alt="显示这段文字说明外链失效" loading="lazy"></p>
+<h3 id="聚合图床"><a href="https://www.superbed.cn/">聚合图床</a>	微信登录，图片小于5M</h3>
+<figure data-type="image" tabindex="3"><img src="https://pic.downk.cc/item/5e69111de83c3a1e3ab8171a.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
+<h3 id="postimage"><a href="https://postimages.org/">Postimage</a>	新发现的，功能丰富完善。国外网站，但很快速（可能会删图片）</h3>
+<figure data-type="image" tabindex="4"><img src="https://i.postimg.cc/PqTWF28q/VS.jpg" alt="显示这段文字说明外链失效" loading="lazy"></figure>
+<!-- more -->
+<h2 id="一些黑名单稍后放到文底">一些黑名单，稍后放到文底</h2>
+<p>插入图片外链真TM操蛋</p>
+<h3 id="森七图床"><a href="https://img.mosq.cn/">森七图床</a>		复制一段该网站描述</h3>
+<blockquote>
+<h3 id="about-us">About Us</h3>
+<p>本站不做任何上传的图片保存，且上传后无法删除。请自行斟酌使用；请勿上传违反中国大陆和香港法律的图片，违者后果自负。</p>
+</blockquote>
+<h3 id="七牛云"><a href="https://www.qiniu.com/">七牛云</a>    需有自己的已备案域名（又拍云同理）</h3>
+<h3 id="腾讯云"><a href="https://cloud.tencent.com/">腾讯云</a>    仅免费6个月</h3>
+<h3 id="imgurl"><a href="https://imgurl.org/">imgURL</a>   游客限制每日上传10张，单张图片不能超过5M</h3>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hugo入门（二）Github仓库迁移]]></title>
+        <id>https://molun01.github.io/post/Lesson2/</id>
+        <link href="https://molun01.github.io/post/Lesson2/">
+        </link>
+        <updated>2019-10-22T01:39:41.000Z</updated>
+        <summary type="html"><![CDATA[<p><a href="https://pages.github.com/">GitHub Pages</a>规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><a href="https://pages.github.com/">GitHub Pages</a>规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。</p>
+<!-- more -->
+<h1 id="迁移后的好处">迁移后的好处</h1>
+<p>可以从不同仓库gh-pages分支部署博客了，方便切换主题或控制版本</p>
+<h1 id="如何迁移">如何迁移</h1>
+<h2 id="新建一个仓库">新建一个仓库</h2>
+<p>1.在此页面的<code>Repository name</code>框中，为您的代码库起一个名字，例如:<code>Blog</code>。<br>
+2.添加自述文件<code>README.md</code>到其中。（可选）<br>
+3.单击<code>Create repository</code>，创建成功可看到三种添加文件方式的指导;</p>
+<h1 id="将您的文件上传到github">将您的文件上传到GitHub</h1>
+<p>*如果是搭建一个全新的博客可参考<a href="../Blog-by-Hugo">Hugo入门（零）</a></p>
+<h2 id="迁移步骤">迁移步骤</h2>
+<p>1.新建好仓库后，选择第三个添加文件的方式即从其他仓库中导入项目，挺慢的，成功的标志为邮件通知。<br>
+2.现在你需要为你的仓库创建一个<code>gh-pages</code>分支，该分支会在特殊位置发布。<br>
+3.它的URL采用<code>username.github.io/Repository-name</code>的格式，所以在我的例子中，URL是<code>https://molun01.github.io/Blog</code>。显示的页面是<code>index.html</code>页面。</p>
+<h1 id="测试博客">测试博客</h1>
+<p>在新的浏览器标签中浏览您的<code>GitHub Pages</code>的网址，您将能够在线访问您的网站！通过电子邮件把地址发送给你的朋友，炫耀你的掌握的成果吧。<br>
+注意 ：如果卡住了，<a href="https://pages.github.com/">GitHub Pages主页</a>也是非常有帮助的。</p>
+<h1 id="更多的github知识">更多的GitHub知识</h1>
+<p>如果您想对test-site进行更多更改并将其上传到GitHub，那么您只需像以前一样对文件进行更改。然后，您需要输入以下命令（在每个之后按Enter键）将这些更改推送到GitHub：</p>
+<pre><code>git add -A
+git commit -m 'another commit'
+git push
+</code></pre>
+<p>您可以使用更合适的消息替换上一次的提交信息，以描述您刚刚做出的更改。</p>
+<p>我们仅仅提供了Git的浅显基本的信息。要了解更多信息，请先从<a href="https://help.github.com/cn">GitHub帮助</a>站点开始。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[浏览器收藏夹]]></title>
+        <id>https://molun01.github.io/post/浏览器收藏夹/</id>
+        <link href="https://molun01.github.io/post/浏览器收藏夹/">
+        </link>
+        <updated>2019-10-21T01:41:42.000Z</updated>
+        <summary type="html"><![CDATA[<p>来自我的Cent Browser、Edge、Linux的收藏合集</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>来自我的Cent Browser、Edge、Linux的收藏合集</p>
+<!-- more -->
+<h1 id="windows">Windows</h1>
+<h2 id="默认收藏">默认收藏</h2>
+<h2 id="实用网站">实用网站</h2>
+<h2 id="壁纸">壁纸</h2>
+<h2 id="工具">工具</h2>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hugo入门（一）如何开始写博客]]></title>
+        <id>https://molun01.github.io/post/Lesson1/</id>
+        <link href="https://molun01.github.io/post/Lesson1/">
+        </link>
+        <updated>2019-10-21T01:36:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>用Hugo搭建的博客，主要采用Markdown格式来撰写博文</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>用Hugo搭建的博客，主要采用Markdown格式来撰写博文</p>
+<!-- more -->
+<h2 id="抬头格式及参数">抬头格式及参数</h2>
+<pre><code class="language-head">    +++                             //以下参数均为可选
+    title = &quot;title&quot;                 //标题
+    tags = [&quot;tag1&quot;, &quot;tag2&quot;]         //标签
+    date = &quot;xxxx-xx-xx&quot;             //写作日期，方便自动归档
+    categories = [&quot;category&quot;]       //文章所属分类
+    toc = true                      //在文章中启用目录
+    +++
+</code></pre>
+<!-- more -->
+<h2 id="为标题分级目录支持h1~h6">#为标题分级，目录支持h1~h6</h2>
+<h1 id="h1">#           h1</h1>
+<h2 id="h2">##          h2</h2>
+<h3 id="h3">###         h3</h3>
+<h4 id="h4">####        h4</h4>
+<h5 id="h5">#####       h5</h5>
+<h6 id="h6">######      h6</h6>
+<!-- more -->
+<h2 id="输出">输出#</h2>
+<p>用#(空格)#</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hugo入门（零）搭建博客]]></title>
+        <id>https://molun01.github.io/post/Blog-by-Hugo/</id>
+        <link href="https://molun01.github.io/post/Blog-by-Hugo/">
+        </link>
+        <updated>2019-06-18T00:31:57.000Z</updated>
+        <summary type="html"><![CDATA[<p>Hugo是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo再次使构建网站变得有趣。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Hugo是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo再次使构建网站变得有趣。</p>
+<!-- more -->
+<h1 id="hugo的安装及配置">Hugo的安装及配置</h1>
+<h2 id="步骤-1-安装-hugo">步骤 1. 安装 Hugo</h2>
+<p>转到<a href="https://github.com/spf13/hugo/releases">Hugo Download</a> 并下载适用于您的操作系统和体系结构的版本。将其安装在特定的位置，因为我们将在下一步中使用它。</p>
+<p>参考文档 <a href="https://www.gohugo.org/">快速开始</a></p>
+<h2 id="步骤-2-生成站点并新建文章">步骤 2. 生成站点并新建文章</h2>
+<ol>
+<li>生成站点到<code>/path/to/site</code>路径</li>
+<li>进入<code>site</code>目录</li>
+<li>创建一篇文章<code>README.md</code>到<code>content/post</code>下</li>
+<li>生成页面</li>
+<li>打开浏览器并在地址栏中输入 <a href="http://localhost:1313">http://localhost:1313</a> 进行查看</li>
+</ol>
+<p>对应的命令:</p>
+<pre><code>hugo new site /path/to/site
+cd /path/to/site
+hugo new post/README.md
+hugo server --buildDrafts
+
+                   | EN  
++------------------+----+
+  Pages            | 47  
+  Paginator pages  |  7  
+  Non-page files   |  0  
+  Static files     |  1  
+  Processed images |  0  
+  Aliases          | 16  
+  Sitemaps         |  1  
+  Cleaned          |  0  
+
+Total in 33 ms
+Watching for changes in /home/molun/myblog/{content,data,layouts,static,themes}
+Watching for config changes in /home/molun/myblog/config.toml
+Environment: &quot;development&quot;
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop
+</code></pre>
+<p>至此，一个新的站点已创建完成.</p>
+<h2 id="步骤-3-安装皮肤">步骤 3. 安装皮肤</h2>
+<p>去<a href="https://themes.gohugo.io/">Hugo 主题</a>挑选并下载适合的主题，这里以<code>m10c</code>主题为例：</p>
+<pre><code>cd site/    
+git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+#在你的站点根目录执行 Hugo 命令进行调试：
+hugo server --theme=m10c --buildDrafts
+#（注明：v0.15 版本之后，不再需要使用 --watch 参数了）
+</code></pre>
+<p>如果想要简介演示的主题颜色，你可以看到<code>m10c/exampleSite/ config.toml</code>文件。</p>
+<h2 id="步骤-4-部署站点">步骤 4. 部署站点</h2>
+<p>*按<code>Ctrl+C</code>停止<code>Hugo</code>服务进程</p>
+<p>假设你需要部署在 <a href="https://pages.github.com/">GitHub Pages</a> 上，首先在<code>GitHub</code>上创建一个<code>Repository</code>，命名为：<code>molun01.github.io</code>（<code>molun01</code>替换为你的<code>github</code>用户名）。</p>
+<p>在站点根目录执行<code>Hugo</code>命令生成最终页面：</p>
+<pre><code>hugo --theme=hyde --baseUrl=&quot;http://molun01.github.io/&quot;
+</code></pre>
+<p>如果一切顺利，所有静态页面都会生成到<code>site/public/</code>下，将<code>pubilc</code>目录里所有文件<code>push</code>到刚创建的<code>Repository</code>的<code>master</code>分支。</p>
+<p>注意：<code>GitHub Pages</code>只能从<code>master</code>分支部署</p>
+<pre><code>cd public
+git init
+git remote add origin https://github.com/molun01/molun01.github.io.git
+git add -A
+git commit -m &quot;first commit&quot;
+git push -u origin master
+</code></pre>
+<p>浏览器里访问：<a href="http://coderzh.github.io/">http://molun01.github.io/</a></p>
+<h2 id="步骤-5-祝你玩的开心y_y">步骤 5. 祝你玩的开心Y(<sup>_</sup>)Y</h2>
+<p>学习新东西的最好方式就是去玩它。</p>
+]]></content>
+    </entry>
+</feed>
