@@ -1,0 +1,255 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    数据结构课程设计——学生通讯录管理系统 | molun&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://molun01.github.io/favicon.ico?v=1656316286856">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://molun01.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://molun01.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+        
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://molun01.github.io">
+                <img class="avatar" src="https://molun01.github.io/images/avatar.png?v=1656316286856" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    molun&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/post/tools" class="menu">
+                                    工具
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            数据结构课程设计——学生通讯录管理系统
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2020-01-02</time>
+                            
+                                <a href="https://molun01.github.io/tag/ke-cheng-she-ji/" class="post-tag i-tag
+                            i-tag-other_2">
+                            #课程设计
+                        </a>
+                                
+                                <a href="https://molun01.github.io/tag/jing-li/" class="post-tag i-tag
+                            i-tag-error">
+                            #经历
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://assets.codemart.com/upload/10621631537193992.png')"></div>
+                            
+                                <div class="post-content">
+                                    <p>在大二上学期参与的数据结构课程设计</p>
+<!-- more -->
+<h1 id="研究课题学生通讯录管理系统">研究课题：学生通讯录管理系统</h1>
+<h2 id="1题目及要求">1.题目及要求。</h2>
+<figure data-type="image" tabindex="1"><img src="https://s1.ax1x.com/2020/03/12/8VJuaF.jpg" alt="研究课题" loading="lazy"></figure>
+<h2 id="2源代码">2.源代码</h2>
+<p>学生通讯录管理系统.c</p>
+<h2 id="3可执行文件">3.可执行文件</h2>
+<p>学生通讯录管理系统.exe</p>
+<h2 id="4关键代码">4.关键代码</h2>
+<pre><code class="language-c">/* 检查学号，手机号等关键字，判断记录是否已存在，存在返回TRUE */
+int CheckContactsKey(char key[],int start,int cycle) {
+	char buf[BUFLEN];
+	FILE *fp1;							//在不动fp的情况下遍历文件
+	int i=1;
+	if((fp1=fopen(fname,&quot;r&quot;))==NULL) {
+		printf(&quot;打开文件%s失败.\n&quot;,fname);
+		system(&quot;pause&quot;);
+		return FALSE;
+	}
+	for(i=1;i&lt;start;i++) if(fscanf(fp1,&quot;%s&quot;,buf)!=1) break;//跳过关键字之前的元素位
+	while(fscanf(fp1,&quot;%s&quot;,buf)==1) {		//这里必须用等式，不能用！逻辑
+		if(strcmp(Encry(buf),key)==0) {
+			fclose(fp1);
+			return TRUE;					/* 关键字已存在，找到相关联系人 */
+		}
+		for(i=1;i&lt;cycle;i++) if(fscanf(fp1,&quot;%s&quot;,buf)!=1) break;//跳过一个循环周期 
+	}
+	fclose(fp1);
+	return FALSE;							/* 未发现该关键字 */
+}
+</code></pre>
+<h2 id="5设计成果展示">5.设计成果展示</h2>
+<p><img src="https://assets.codemart.com/upload/55331631537122512.png" alt="1" loading="lazy"><br>
+<img src="https://assets.codemart.com/upload/61281631537130005.png" alt="2" loading="lazy"><br>
+<img src="https://assets.codemart.com/upload/63021631537400635.png" alt="3" loading="lazy"><br>
+<img src="https://assets.codemart.com/upload/58811631537520413.png" alt="4" loading="lazy"><br>
+<img src="https://assets.codemart.com/upload/41751631537527060.png" alt="5" loading="lazy"></p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://molun01.github.io/post/浏览器隐藏功能开启方法/">
+                                <h3 class="post-title">
+                                    浏览器隐藏功能开启方法
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E7%A0%94%E7%A9%B6%E8%AF%BE%E9%A2%98%E5%AD%A6%E7%94%9F%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F">研究课题：学生通讯录管理系统</a>
+<ul>
+<li><a href="#1%E9%A2%98%E7%9B%AE%E5%8F%8A%E8%A6%81%E6%B1%82">1.题目及要求。</a></li>
+<li><a href="#2%E6%BA%90%E4%BB%A3%E7%A0%81">2.源代码</a></li>
+<li><a href="#3%E5%8F%AF%E6%89%A7%E8%A1%8C%E6%96%87%E4%BB%B6">3.可执行文件</a></li>
+<li><a href="#4%E5%85%B3%E9%94%AE%E4%BB%A3%E7%A0%81">4.关键代码</a></li>
+<li><a href="#5%E8%AE%BE%E8%AE%A1%E6%88%90%E6%9E%9C%E5%B1%95%E7%A4%BA">5.设计成果展示</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> molun出品，必属精品 | 
+  <a class="rss" href="https://molun01.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+</body>
+
+</html>

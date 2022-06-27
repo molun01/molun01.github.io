@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Hugo入门（二）Github仓库迁移 | molun&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://molun01.github.io/favicon.ico?v=1656316286856">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://molun01.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://molun01.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+        
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://molun01.github.io">
+                <img class="avatar" src="https://molun01.github.io/images/avatar.png?v=1656316286856" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    molun&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/post/tools" class="menu">
+                                    工具
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Hugo入门（二）Github仓库迁移
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2019-10-22</time>
+                            
+                                <a href="https://molun01.github.io/tag/bo-ke/" class="post-tag i-tag
+                            i-tag-info">
+                            #博客
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8Ny6.jpg')"></div>
+                            
+                                <div class="post-content">
+                                    <p><a href="https://pages.github.com/">GitHub Pages</a>规则更新，将代码仓库迁移可以更灵活的在Github上部署博客。</p>
+<!-- more -->
+<h1 id="迁移后的好处">迁移后的好处</h1>
+<p>可以从不同仓库gh-pages分支部署博客了，方便切换主题或控制版本</p>
+<h1 id="如何迁移">如何迁移</h1>
+<h2 id="新建一个仓库">新建一个仓库</h2>
+<ol>
+<li>在此页面的<code>Repository name</code>框中，为您的代码库起一个名字，例如:<code>Blog</code>。</li>
+<li>添加自述文件<code>README.md</code>到其中。（可选）</li>
+<li>单击<code>Create repository</code>，创建成功可看到三种添加文件方式的指导;</li>
+</ol>
+<h2 id="将您的文件上传到github">将您的文件上传到GitHub</h2>
+<p>*如果是搭建一个全新的博客可参考<a href="/post/Hugo%E5%85%A5%E9%97%A8%EF%BC%88%E9%9B%B6%EF%BC%89%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">Hugo入门（零）</a></p>
+<h2 id="迁移步骤">迁移步骤</h2>
+<ol>
+<li>新建好仓库后，选择第三个添加文件的方式即从其他仓库中导入项目，挺慢的，成功的标志为邮件通知。</li>
+<li>现在你需要为你的仓库创建一个<code>gh-pages</code>分支，该分支会在特殊位置发布。</li>
+<li>它的URL采用<code>username.github.io/Repository-name</code>的格式，所以在我的例子中，URL是<code>https://molun01.github.io/Blog</code>。显示的页面是<code>index.html</code>页面。</li>
+</ol>
+<h1 id="测试博客">测试博客</h1>
+<p>在新的浏览器标签中浏览您的<code>GitHub Pages</code>的网址，您将能够在线访问您的网站！通过电子邮件把地址发送给你的朋友，炫耀你的掌握的成果吧。<br>
+注意 ：如果卡住了，<a href="https://pages.github.com/">GitHub Pages</a>也是非常有帮助的。</p>
+<h1 id="更多的github知识">更多的GitHub知识</h1>
+<p>如果您想对test-site进行更多更改并将其上传到GitHub，那么您只需像以前一样对文件进行更改。然后，您需要输入以下命令（在每个之后按Enter键）将这些更改推送到GitHub：</p>
+<pre><code class="language-shell">$ git add -A
+$ git commit -m 'another commit'
+$ git push
+</code></pre>
+<p>您可以使用更合适的消息替换上一次的提交信息，以描述您刚刚做出的更改。</p>
+<p>我们仅仅提供了Git的浅显基本的信息。要了解更多信息，请先从<a href="https://help.github.com/cn">GitHub帮助</a>站点开始。</p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://molun01.github.io/post/浏览器收藏夹/">
+                                <h3 class="post-title">
+                                    浏览器收藏夹
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#%E8%BF%81%E7%A7%BB%E5%90%8E%E7%9A%84%E5%A5%BD%E5%A4%84">迁移后的好处</a></li>
+<li><a href="#%E5%A6%82%E4%BD%95%E8%BF%81%E7%A7%BB">如何迁移</a>
+<ul>
+<li><a href="#%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E4%BB%93%E5%BA%93">新建一个仓库</a></li>
+<li><a href="#%E5%B0%86%E6%82%A8%E7%9A%84%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github">将您的文件上传到GitHub</a></li>
+<li><a href="#%E8%BF%81%E7%A7%BB%E6%AD%A5%E9%AA%A4">迁移步骤</a></li>
+</ul>
+</li>
+<li><a href="#%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2">测试博客</a></li>
+<li><a href="#%E6%9B%B4%E5%A4%9A%E7%9A%84github%E7%9F%A5%E8%AF%86">更多的GitHub知识</a></li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> molun出品，必属精品 | 
+  <a class="rss" href="https://molun01.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+</body>
+
+</html>

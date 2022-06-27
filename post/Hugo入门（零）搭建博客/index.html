@@ -1,0 +1,271 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Hugo入门（零）搭建博客 | molun&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://molun01.github.io/favicon.ico?v=1656316286856">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://molun01.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://molun01.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+        
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://molun01.github.io">
+                <img class="avatar" src="https://molun01.github.io/images/avatar.png?v=1656316286856" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    molun&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/post/tools" class="menu">
+                                    工具
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Hugo入门（零）搭建博客
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2019-06-18</time>
+                            
+                                <a href="https://molun01.github.io/tag/bo-ke/" class="post-tag i-tag
+                            i-tag-primary">
+                            #博客
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://s1.ax1x.com/2020/03/12/8V8sfA.jpg')"></div>
+                            
+                                <div class="post-content">
+                                    <p>Hugo是最受欢迎的开源静态站点生成器之一。凭借其惊人的速度和灵活性，Hugo再次使构建网站变得有趣。</p>
+<!-- more -->
+<h1 id="hugo的安装及配置">Hugo的安装及配置</h1>
+<h2 id="步骤-一-安装-hugo">步骤 一、安装 Hugo</h2>
+<p>转到<a href="https://github.com/spf13/hugo/releases">Hugo Download</a> 并下载适用于您的操作系统和体系结构的版本。将其安装在特定的位置，因为我们将在下一步中使用它。</p>
+<p>参考文档 <a href="https://www.gohugo.org/">快速开始</a></p>
+<h2 id="步骤二-生成站点并新建文章">步骤二、生成站点并新建文章</h2>
+<ol>
+<li>生成站点到<code>/path/to/site</code>路径</li>
+<li>进入<code>site</code>目录</li>
+<li>创建一篇文章<code>README.md</code>到<code>content/post</code>下</li>
+<li>生成页面</li>
+<li>打开浏览器并在地址栏中输入 <a href="http://localhost:1313">http://localhost:1313</a> 进行查看</li>
+</ol>
+<p>对应的命令:</p>
+<pre><code class="language-shell">$ hugo new site /path/to/site
+$ cd /path/to/site
+$ hugo new post/README.md
+$ hugo server --buildDrafts
+    
+                       | EN  
+    +------------------+----+
+      Pages            | 47  
+      Paginator pages  |  7  
+      Non-page files   |  0  
+      Static files     |  1  
+      Processed images |  0  
+      Aliases          | 16  
+      Sitemaps         |  1  
+      Cleaned          |  0  
+    
+    Total in 33 ms
+    Watching for changes in /home/molun/myblog/{content,data,layouts,static,themes}
+    Watching for config changes in /home/molun/myblog/config.toml
+    Environment: &quot;development&quot;
+    Serving pages from memory
+    Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+    Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+    Press Ctrl+C to stop
+</code></pre>
+<p>至此，一个新的站点已创建完成.</p>
+<h2 id="步骤三-安装皮肤">步骤三、安装皮肤</h2>
+<p>去<a href="https://themes.gohugo.io/">Hugo 主题</a>挑选并下载适合的主题，这里以<code>m10c</code>主题为例：</p>
+<pre><code class="language-shell">$ cd site/    
+$ git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c
+$ #在你的站点根目录执行 Hugo 命令进行调试：
+$ hugo server --theme=m10c --buildDrafts
+$ #（注明：v0.15 版本之后，不再需要使用 --watch 参数了）
+</code></pre>
+<p>如果想要简介演示的主题颜色，你可以看到<code>m10c/exampleSite/ config.toml</code>文件。</p>
+<h2 id="步骤四-部署站点">步骤四、部署站点</h2>
+<p>*按<code>Ctrl+C</code>停止<code>Hugo</code>服务进程</p>
+<p>假设你需要部署在 <a href="https://pages.github.com/">GitHub Pages</a> 上，首先在<code>GitHub</code>上创建一个<code>Repository</code>，命名为：<code>molun01.github.io</code>（<code>molun01</code>替换为你的<code>github</code>用户名）。</p>
+<p>在站点根目录执行<code>Hugo</code>命令生成最终页面：</p>
+<pre><code class="language-shell">$ hugo --theme=hyde --baseUrl=&quot;https://molun01.github.io/&quot;
+</code></pre>
+<p>如果一切顺利，所有静态页面都会生成到<code>site/public/</code>下，将<code>pubilc</code>目录里所有文件<code>push</code>到刚创建的<code>Repository</code>的<code>master</code>分支。</p>
+<p>注意：<code>GitHub Pages</code>只能从<code>master</code>分支部署</p>
+<pre><code class="language-shell">$ cd public
+$ git init
+$ git remote add origin https://github.com/molun01/molun01.github.io.git
+$ git add -A
+$ git commit -m &quot;first commit&quot;
+$ git push -u origin master
+</code></pre>
+<p>浏览器里访问：<a href="https://molun01.github.io/">https://molun01.github.io/</a></p>
+<h2 id="步骤-5-祝你玩的开心y_y">步骤 5. 祝你玩的开心Y(<sup>_</sup>)Y</h2>
+<p>学习新东西的最好方式就是去玩它。</p>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                        <!-- toc -->
+                        
+    <div class="toc-card i-card ">
+        <div class="toc-title i-card-title">目录</div>
+        <div class="toc-content">
+            <ul class="markdownIt-TOC">
+<li><a href="#hugo%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E9%85%8D%E7%BD%AE">Hugo的安装及配置</a>
+<ul>
+<li><a href="#%E6%AD%A5%E9%AA%A4-%E4%B8%80-%E5%AE%89%E8%A3%85-hugo">步骤 一、安装 Hugo</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4%E4%BA%8C-%E7%94%9F%E6%88%90%E7%AB%99%E7%82%B9%E5%B9%B6%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0">步骤二、生成站点并新建文章</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4%E4%B8%89-%E5%AE%89%E8%A3%85%E7%9A%AE%E8%82%A4">步骤三、安装皮肤</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4%E5%9B%9B-%E9%83%A8%E7%BD%B2%E7%AB%99%E7%82%B9">步骤四、部署站点</a></li>
+<li><a href="#%E6%AD%A5%E9%AA%A4-5-%E7%A5%9D%E4%BD%A0%E7%8E%A9%E7%9A%84%E5%BC%80%E5%BF%83y_y">步骤 5. 祝你玩的开心Y(^_^)Y</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <script>
+            function locateCatelogList() {
+                /*获取文章目录集合,可通过:header过滤器*/
+                var alis = $('.post-content :header');
+                /*获取侧边栏目录列表集合**/
+                var sidebar_alis = $('.markdownIt-TOC a');
+                /*获取滚动条到顶部的距离*/
+                var scroll_height = $(window).scrollTop();
+                for (var i = 0; i < alis.length; i++) {
+                    /*获取锚点集合中的元素分别到顶点的距离*/
+                    var a_height = $(alis[i]).offset().top;
+                    if (a_height < scroll_height) {
+                        /*高亮显示*/
+                        sidebar_alis.removeClass('on');
+                        $(sidebar_alis[i]).addClass('on');
+                    }
+                }
+            }
+            $(function() {
+                /*绑定滚动事件 */
+                $(window).bind('scroll', locateCatelogList);
+            });
+        </script>
+    </div>
+    
+                            
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> molun出品，必属精品 | 
+  <a class="rss" href="https://molun01.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+</body>
+
+</html>

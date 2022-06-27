@@ -1,0 +1,248 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>
+    Kali杂记（一） | molun&#39;s Blog
+</title>
+<link rel="shortcut icon" href="https://molun01.github.io/favicon.ico?v=1656316286856">
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"> -->
+<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link rel="stylesheet" href="https://molun01.github.io/styles/main.css">
+<!-- js -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://molun01.github.io/media/js/jquery.sticky-sidebar.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+
+        
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+    <div class="nav">
+        <div class="logo">
+            <a href="https://molun01.github.io">
+                <img class="avatar" src="https://molun01.github.io/images/avatar.png?v=1656316286856" alt="">
+            </a>
+            <div class="site-title">
+                <h1>
+                    molun&#39;s Blog
+                </h1>
+            </div>
+        </div>
+        <span class="menu-btn fa fa-align-justify"></span>
+        <div class="menu-container">
+            <ul>
+                
+                    
+                            <li>
+                                <a href="/post/tools" class="menu">
+                                    工具
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/archives" class="menu">
+                                    归档
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/tags" class="menu">
+                                    标签
+                                </a>
+                            </li>
+                            
+                                
+                    
+                            <li>
+                                <a href="/post/about" class="menu">
+                                    关于
+                                </a>
+                            </li>
+                            
+                                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $(".menu-btn").click(function() {
+            $(".menu-container").slideToggle();
+        });
+        $(window).resize(function() {
+
+            if (window.matchMedia('(min-width: 960px)').matches) {
+                $(".menu-container").css('display', 'block')
+            } else {
+                $(".menu-container").css('display', 'none')
+            }
+
+        });
+    });
+</script>
+
+            <div id="main-content" class="post-detail main-container">
+                <!-- left -->
+                <div id="content" class="main-container-left">
+                    <article class="post i-card">
+                        <h2 class="post-title">
+                            Kali杂记（一）
+                        </h2>
+                        <div class="post-info">
+                            <time class="post-time">2021-11-20</time>
+                            
+                                <a href="https://molun01.github.io/tag/xi-tong/" class="post-tag i-tag
+                            i-tag-error">
+                            #系统
+                        </a>
+                                
+                        </div>
+                        
+                            <div class="post-feature-image" style="background-image: url('https://z3.ax1x.com/2021/11/25/oAdzlR.png')"></div>
+                            
+                                <div class="post-content">
+                                    <p>安装Kali后的基本配置</p>
+<!-- more -->
+<ol>
+<li>
+<p>普通用户<code>kali/kali</code>登录，<code>sudo su</code>提权</p>
+</li>
+<li>
+<p><code>passwd</code>，修改<code>root</code>用户密码</p>
+</li>
+<li>
+<p>配置中文环境</p>
+<ul>
+<li><code>/usr/sbin/dpkg-reconfigure locales</code></li>
+<li>选择<code>en_US-utf8</code>、<code>zh_CN-gbk</code>、<code>zh_CN-utf8</code></li>
+<li><code>zh_CN-utf8</code>设为默认编码</li>
+</ul>
+</li>
+<li>
+<p>换国内源</p>
+<ul>
+<li><code>mousepad /etc/apt/sources.list</code></li>
+<li>注释<code>Kali</code>官方源，并添加以下：</li>
+</ul>
+<pre><code class="language-shell">#中科大
+deb http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+deb-src http://mirrors.ustc.edu.cn/kali kali-rolling main non-free contrib
+#deb http://mirrors.ustc.edu.cn/kali-security kali/updates main contrib non-free
+</code></pre>
+</li>
+<li>
+<p>检查更新<code>apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get clean</code></p>
+</li>
+<li>
+<p>装中文字体<code>apt-get install ttf-wqy-microhei ttf-wqy-zenhei xfonts-wqy</code></p>
+</li>
+<li>
+<p>重启中文环境生效<code>reboot</code></p>
+</li>
+<li>
+<p>安装中文输入法<code>apt-get install ibus ibus-pinyin</code></p>
+</li>
+<li>
+<p>启动<code>ssh</code>并设置开机自启<code>systemctl enable --now ssh</code></p>
+</li>
+<li>
+<p>纯命令行启动<code>systemctl set-default multi-user.target</code></p>
+<p>或恢复图形界面启动<code>systemctl set-default graphical.target</code></p>
+<p>然后<code>reboot</code></p>
+</li>
+<li></li>
+</ol>
+
+                                </div>
+                    </article>
+                    <!--  -->
+                    
+                        <div class="next-post">
+                            <div class="next">下一篇</div>
+                            <a href="https://molun01.github.io/post/电商安全技术课实验项目/">
+                                <h3 class="post-title">
+                                    安全技术实验
+                                </h3>
+                            </a>
+                        </div>
+                        
+                            <div id="disqus_thread"></div>
+                            <div id="gitalk-container"></div>
+                </div>
+                <!-- middle -->
+                <div class="main-container-middle"></div>
+                <!-- right -->
+                <div id="sidebar" class="main-container-right">
+                    
+                                <!-- id-card -->
+                                
+    <div class="id_card i-card">
+        <div class="id_card-avatar" style="background-image: url(https://molun01.github.io/images/avatar.png?v=1656316286856)">
+        </div>
+        <h1 class="id_card-title">
+            molun&#39;s Blog
+        </h1>
+        <h2 class="id_card-description">
+            博客、学习、C/C++/Java、用Gridea搭建博客、浏览器收藏夹
+        </h2>
+        <!--  -->
+        <div class="id_card-sns">
+            <!-- github -->
+            
+                <a href="https://github.com/molun01" target="_blank" rel="noopener noreferrer"><i
+                class="fa fa-github"></i></a>
+                
+                    <!-- twitter -->
+                    
+                            <!-- weibo -->
+                            
+                                    <!-- facebook -->
+                                    
+
+        </div>
+    </div>
+    
+                                    
+
+                </div>
+
+
+
+
+            </div>
+
+
+            <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> molun出品，必属精品 | 
+  <a class="rss" href="https://molun01.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+
+    </div>
+    <script>
+        $('#sidebar').stickySidebar({
+            topSpacing: 80,
+            // bottomSpacing: 60
+        });
+    </script>
+    
+</body>
+
+</html>
